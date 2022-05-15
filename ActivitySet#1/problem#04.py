@@ -1,9 +1,8 @@
 # Conditional Execution
 
-hrs = int(input("Enter hours? "))
-rate= float(input("enter rate:"))
-if hrs<=40:  
+hrs = (input("Enter hours? "))
+rate= (input("enter rate:"))
+if (hrs<=40):
     x=hrs*rate
-else:  
-    x=40*rate + (hrs-40)*1.5*rate
+elif(hrs>40):x=hrs*rate + (hrs-40)*1.5*rate
 print("pay:",x)
