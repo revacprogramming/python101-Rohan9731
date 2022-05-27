@@ -6,9 +6,9 @@ fname = input("Enter file name: ")
 try:
 	fh = open(fname)
 except:
-    print("entered file is invalid/not found:",fname)
+    print("Entered file is invalid/not found: ",fname)
 for line in fh:
-	if line.startswith("X-DSPAM-Confidence:"):
+	if line.startswith("X-DSPAM-Confidence: "):
 		count=count+1
 		digit= line.find(":")
 		x= float(line[digit+1:])
