@@ -6,7 +6,7 @@ fname = input("Enter file name: ")
 try:
 	fh = open(fname)
 except:
-    print("Entered file is invalid/not found: ",fname)
+    print("Entered file is invalid/not exist: ",fname)
 for line in fh:
 	if line.startswith("X-DSPAM-Confidence: "):
 		count=count+1
