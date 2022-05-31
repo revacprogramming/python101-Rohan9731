@@ -3,7 +3,7 @@
 # to a floating point number and print it out.
 text = "X-DSPAM-Confidence: 0.8475 "
 x= text.find('0')
-y=text.find('x:')
-z=text[x:y]
+#y=text.find('x:')
+z=text[x:]
 value= float(z)
 print(value)
