@@ -7,8 +7,8 @@ except:
     print("Entered file is invalid")
 lst = list()
 for line in fh:
-    line=line.rstrip()
-    words=line.split()
+    words=line.rstrip().split()
+    #words=line.split()
     for word in words:
         if word in lst:
             continue
