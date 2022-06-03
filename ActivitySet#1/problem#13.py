@@ -6,6 +6,7 @@ try:
 except:
 	print("invalid input")
 d={}
+l=list()
 
 for line in handle:
 	if line.startswith("From "):   
@@ -15,7 +16,7 @@ for line in handle:
 		d[line]=d.get(line,0)+1
 	else:
 		continue        
-l=list()
+
 for key,value in d.items():
 	l.append((key,value))
     
