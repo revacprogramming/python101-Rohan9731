@@ -23,4 +23,5 @@ for key,value in d.items():
 l.sort()
 
 for key,value in l[:]:
+    
 	print(key,value)
