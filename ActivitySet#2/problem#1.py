@@ -1,13 +1,14 @@
 
 
-def add(a, b):
-    return  a+b
+def add(x,y):
+    z=  x+y
+    return z
 
 
-def main():
-    a = input("Enter the first number: ")
-    b = input("Enter the second number:")
-    c = add(a, b)
+
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number:"))
+c = add(a,b)
     
     
     
