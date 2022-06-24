@@ -1,4 +1,4 @@
-from wsgiref.util import FileWrapper
+# from wsgiref.util import FileWrapper
 
 
 score = float(input("Enter Score: "))
