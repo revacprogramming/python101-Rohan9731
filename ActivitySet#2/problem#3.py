@@ -1,6 +1,6 @@
 
 def get_cs():
-    a=(input("enter a string"))
+    a=(input("enter a string : "))
     return a
 
 
