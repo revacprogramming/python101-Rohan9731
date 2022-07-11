@@ -11,7 +11,7 @@ def cs_to_lot(cs):
         b=i.split("=")
         j.append(b)
     j.pop()
-    return j
+    return j  
 
     
 
