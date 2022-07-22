@@ -1,24 +1,30 @@
-
-
 def get_cs():
-    """get string input"""
+    a=(input("enter a string"))
+    return a
 
+def cs_to_lot(cs):
+    a=cs.split(";")
+    j=list()
+    for i in a:
+        b=i.split("=")
+        j.append(b)
+    j.pop()
+    return j
 
-def cs_to_dict(cs):
-    """convert connect string to a dictionary"""
-
-
-def dict_to_cs(d):
-    """convert a dictionary to connect string"""
+def lot_to_cs(lot):
+    k=str()
+    for (i,j) in lot:
+        k=k+(i+"="+j+";")
+    return k
 
 
 def main():
-    cs = get_cs()
+    cs=get_cs()
 
-    d = cs_to_dict(cs) # convert connect string to a dictionary
-    print(d)
+    lot=cs_to_lot(cs)  # convert connect string to list of tuples
+    print(lot)
 
-    cs = dict_to_cs(d)
+    cs=lot_to_cs(lot)  # convert list of strings to connect string
     print(cs)
 
 
